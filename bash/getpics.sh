@@ -18,8 +18,8 @@ test -f ~/Pictures/pics.zip || wget -q -O ~/Pictures/pics.zip http://zonzorp.net
 test -f ~/Pictures/pics.zip && unzip -d ~/Pictures -o -q ~/Pictures/pics.zip && rm ~/Pictures/pics.zip
 
 #get the tar file from web
-test -f ~/Pictures/pics.tgz || wget -q -O ~/Pictures/pics.zip http://zonzorp.net/pics.tqz
-test -f ~/Pictures/pics.tgz || tar zxvf -d ~/Pictures -o -q ~/Pictures/pics.tgz && rm ~/Pictures/pics.tgz
+test -f ~/Pictures/pics.tgz || wget -q -O ~/Pictures/pics.tgz http://zonzorp.net/pics.tgz
+test -f ~/Pictures/pics.tgz && tar zxvf -o pics.tgz ~/Pictures/pics.tgz && rm ~/Pictures/pics.tgz
 # Make a report on what we have in the Pictures directory
 test -d ~/Pictures && cat <<EOF
 Found $(find ~/Pictures -type f|wc -l) files in the Pictures directory.
