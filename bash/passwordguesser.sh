@@ -10,7 +10,6 @@
 #           *** Do not use the exit command, and do not use a loop (e.g. while or for)
 
 myString="sec"
-referenceString="password"
 prompt="Enter password:"
 
 read -p "$prompt" sec
